@@ -4,6 +4,7 @@ function sidenVises() {
     console.log("sidenVises");
 
     document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+    document.querySelector("#pil").addEventListener("click", dropDown);
 
 }
 
@@ -21,5 +22,18 @@ function toggleMenu() {
         document.getElementById("menuknap").src = "assets/Menu.svg";
     } else {
         document.getElementById("menuknap").src = "assets/No.svg";
+    }
+}
+
+function dropDown() {
+    console.log("dropdown");
+    document.querySelector("#dropdown").classList.toggle("hidden");
+
+    let erSkjult = document.querySelector("#dropdown").classList.contains("hidden");
+
+    if (erSkjult == true) {
+        document.getElementById("pil").src = "assets/down arrow small.svg";
+    } else {
+        document.getElementById("pil").src = "assets/pilup.svg";
     }
 }

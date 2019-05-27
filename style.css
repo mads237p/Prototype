@@ -4,7 +4,6 @@
 
 :root {
     --main-bg-color: #F58E81;
-    ;
 }
 
 body {
@@ -30,10 +29,48 @@ header img {
     height
 }
 
+h1 {
+    margin: 3rem 1rem;
+    text-transform: capitalize;
+    font-family: 'canada-type-gibson', sans-serif;
+    font-size: 2rem;
+}
+
+h2 {
+    margin: 1.5rem 2rem;
+    font-family: 'canada-type-gibson', sans-serif;
+    font-size: 1.5rem;
+    color: #EA5045;
+
+}
+
+h3 {}
+
+h4 {
+    font-family: 'canada-type-gibson', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #000;
+    padding: 1rem;
+}
+
+p {
+    padding: 0 1rem;
+    font-family: 'canada-type-gibson', sans-serif;
+}
+
+.txt2 {
+    margin: 1rem 0 0 0;
+    padding: 0 2rem;
+
+}
+
+
 ul {
     list-style-type: none;
-    font-family: 'gibson', sans-serif;
+    font-family: 'canada-type-gibson', sans-serif;
     color: #F58E81;
+    padding-inline-start: 0;
 
 }
 
@@ -79,6 +116,7 @@ input {
 
 #login {
     color: #FFFFFF;
+    margin: 1vw 20vw;
     background-color: #EA5045;
 }
 
@@ -86,13 +124,20 @@ input {
     color: #F58E81;
     background-color: #FFFFFF;
     border: 2px solid #EA5045;
+    margin: 0 20vw;
 
 }
 
-input checkbox {
-    width: 10px;
-    height: 10px;
+#checkbox {
+    position: absolute;
+    width: 2vw;
+    top: 55vw;
+    left: 40vw;
     background-color: #000;
+}
+
+article #huskmig {
+    position: absolute;
 }
 
 
@@ -125,7 +170,7 @@ nav #profile {
     bottom: 0;
     margin: 0;
     padding: 25vw 40vw;
-    font-family: 'gibson', sans-serif;
+    font-family: 'canada-type-gibson', sans-serif;
     background-color: #3F3140;
     font-size: 1.5rem;
     text-align: center;
@@ -286,6 +331,43 @@ figure {
 
 
 
+.grey {
+    margin: 2rem 1.2rem;
+    /*    padding: 0.5rem 0.7rem;*/
+    background-color: #DEDCDB;
+    /*    padding: 1rem;*/
+
+}
+
+.grey img {
+    position: relative;
+    left: 84vw;
+    bottom: 2vw;
+
+}
+
+.link {
+    position: relative;
+    left: 75vw;
+    bottom: 8vw;
+
+}
+
+/***** DROP DOWN MENU *****/
+
+#dropdown {
+    background-color: #FFF;
+    align-items: flex-start;
+    background-size: 100%;
+    color: #000;
+}
+
+#dropdown li {
+    border: 1px solid #DEDCDB;
+    padding: 2rem;
+    list-style: none;
+
+}
 
 
 @media only screen and (min-width:604px) {
