@@ -2,35 +2,67 @@
     box-sizing: border-box;
 }
 
+:root {
+    --main-bg-color: #F58E81;
+    ;
+}
+
 body {
     margin: 0;
     background-color: #FAF7F7;
 }
 
-header {
+header #pageone {
     background-color: #F58E81;
-    text-align: center;
+    text-align: left;
+    padding: 5vw 2vw;
+
+}
+
+header #top {
+    background-color: #EA5045;
+    text-align: left;
+    padding: 5vw 2vw;
 
 }
 
 header img {
+    height
+}
+
+ul {
+    list-style-type: none;
+    font-family: 'gibson', sans-serif;
+    color: #F58E81;
+
+}
+
+.hidden {
+    display: none;
+}
+
+/**** LOGIN PAIGE ***/
+
+
+#pageone {
+    background-color: main-bg-color;
+    text-align: center;
+
+}
+
+#pageone img {
     margin: 15vw 15vw;
 }
 
 main {
-    display: flex;
-    flex-wrap: wrap;
     background-color: #FAF7F7;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
 
 }
 
 form {
     margin: 20vw;
-    font-size: 0.9rem;
-    list-style-type: none;
+    font-size: 1rem;
+    /*    list-style-type: none;*/
 
 }
 
@@ -42,7 +74,6 @@ input {
     margin: 3vw;
     height: 8vw;
     width: 50vw;
-    text-decoration: none;
     border-radius: 2rem;
 }
 
@@ -58,12 +89,210 @@ input {
 
 }
 
+input checkbox {
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+}
+
+
+
+/****** LANDING PAGE *******/
+
+header {
+    padding: 5vw;
+    background-color: #EA5045;
+}
+
+nav img {
+    position: absolute;
+    right: 10vw;
+    top: 5vw;
+    height: 30px;
+}
+
+nav #profile {
+    position: absolute;
+    right: 20vw;
+    top: 5vw;
+    height: 30px;
+}
+
+#menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 25vw 40vw;
+    font-family: 'gibson', sans-serif;
+    background-color: #3F3140;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: 2s;
+
+}
+
+#menu li {
+    text-decoration: none;
+    padding: 1rem;
+}
+
+#menuknap {
+    z-index: 10;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active {
+    color: #ffffff;
+}
+
+#menu #logo {
+    position: absolute;
+    left: 40vw;
+    height: 8vw;
+}
+
+
+main #landingpage {
+    background-color: #FAF7F7;
+    margin: 0;
+    font-family: 'gibson', sans-serif;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 2rem;
+    width: 100%;
+    padding: 1rem 0;
+    color: #FFF;
+    background-color: #F58E81
+}
+
+
+/****** GRID *******/
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    text-align: center;
+}
+
+
+.a {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+}
+
+
+.b {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+
+}
+
+.c {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+
+}
+
+.d {
+    padding: 1rem 0;
+    font-size: 2rem;
+    grid-column-end: span 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+
+}
+
+
+.e {
+    grid-column-start: 3;
+    grid-row-start: 2;
+
+}
+
+
+.f {
+    grid-column-start: 1;
+    grid-row-start: 3;
+
+}
+
+.g {
+    grid-column-start: 2;
+    grid-row-start: 3;
+
+}
+
+.h {
+    grid-column-start: 3;
+    grid-column-end: 8;
+    grid-row-start: 3;
+
+}
+
+.i {
+    grid-column-start: 1;
+    grid-row-start: 4;
+
+}
+
+.j {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    justify-content: center;
+    align-items: center;
+    font-family: 'arial', sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+
+}
+
+.k {
+    grid-column-start: 1;
+    grid-row-start: 5;
+
+}
+
+figure {
+    margin: 0;
+    padding: 2rem;
+    background-color: #FFFFFF;
+    color: #F58E81;
+    font-family: 'arial', sans-serif;
+    font-weight: 600;
+    background-size: contain;
+
+}
+
+
+/********** AFLEVERINGER **********/
+
+
+
+
+
+
 @media only screen and (min-width:604px) {
 
-    main {
+    main #front {
         max-width: 800px;
         padding: 0 30vw;
         margin: 0 20vw;
-        justify-content: center;
     }
 }
