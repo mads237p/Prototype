@@ -225,9 +225,15 @@ main #landingpage {
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
     text-align: center;
+}
+
+.item {
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
 
 
@@ -333,7 +339,7 @@ figure {
 
 .grey {
     margin: 2rem 1.2rem;
-    /*    padding: 0.5rem 0.7rem;*/
+    padding: 1rem 0rem;
     background-color: #DEDCDB;
     /*    padding: 1rem;*/
 
