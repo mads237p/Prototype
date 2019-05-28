@@ -25,10 +25,6 @@ header #top {
 
 }
 
-header img {
-    height
-}
-
 h1 {
     margin: 3rem 1rem;
     text-transform: capitalize;
@@ -54,6 +50,14 @@ h4 {
     padding: 1rem;
 }
 
+h5 {
+    font-family: 'canada-type-gibson', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #F58E81;
+    margin-bottom: 4vw;
+}
+
 p {
     padding: 0 1rem;
     font-family: 'canada-type-gibson', sans-serif;
@@ -65,20 +69,29 @@ p {
 
 }
 
+img:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+
 
 ul {
     list-style-type: none;
     font-family: 'canada-type-gibson', sans-serif;
     color: #F58E81;
-    padding-inline-start: 0;
+    padding: 0;
+    margin: 0;
 
 }
 
 .hidden {
     display: none;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: 2s;
 }
 
-/**** LOGIN PAIGE ***/
+/**** LOGIN PAGE ***/
 
 
 #pageone {
@@ -91,13 +104,19 @@ ul {
     margin: 15vw 15vw;
 }
 
-main {
+#front {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #FAF7F7;
+    margin: 30vw 0;
 
 }
 
+
 form {
-    margin: 20vw;
     font-size: 1rem;
     /*    list-style-type: none;*/
 
@@ -109,35 +128,51 @@ input {
     color: #F58E81;
     padding: 0.5rem;
     margin: 3vw;
-    height: 8vw;
-    width: 50vw;
+    height: 9vw;
+    width: 60vw;
     border-radius: 2rem;
+}
+
+.forms {
+    text-align: center;
+
+}
+
+.button {
+    margin-top: 10vw;
+    font-family: "arial", sans-serif;
 }
 
 #login {
     color: #FFFFFF;
-    margin: 1vw 20vw;
+    border-radius: 20px;
     background-color: #EA5045;
+    height: 9vw;
+    width: 60vw;
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 6vw;
 }
 
 #loginfb {
     color: #F58E81;
+    border-radius: 20px;
     background-color: #FFFFFF;
     border: 2px solid #EA5045;
-    margin: 0 20vw;
+    height: 9vw;
+    width: 60vw;
+    text-align: center;
+    padding-top: 15px;
 
 }
+
+#huskmig {
+    display: flex;
+}
+
 
 #checkbox {
-    position: absolute;
-    width: 2vw;
-    top: 55vw;
-    left: 40vw;
-    background-color: #000;
-}
-
-article #huskmig {
-    position: absolute;
+    height: 10px;
 }
 
 
@@ -149,41 +184,56 @@ header {
     background-color: #EA5045;
 }
 
-nav img {
+nav #menuknap {
     position: absolute;
     right: 10vw;
-    top: 5vw;
-    height: 30px;
+    top: 8vw;
+    height: 20px;
 }
 
 nav #profile {
     position: absolute;
     right: 20vw;
-    top: 5vw;
-    height: 30px;
+    top: 8vw;
+    height: 20px;
+}
+
+nav . {
+    position: absolute;
+    right: 20vw;
+    top: 8vw;
+    height: 20px;
 }
 
 #menu {
+    flex-wrap: wrap;
+    display: inline-block;
     position: fixed;
     right: 0;
     top: 0;
     bottom: 0;
     margin: 0;
-    padding: 25vw 40vw;
+    /*    height: 100%;*/
+    width: 100%;
+    padding: 35vw;
     font-family: 'canada-type-gibson', sans-serif;
     background-color: #3F3140;
     font-size: 1.5rem;
     text-align: center;
+    justify-content: center;
+    z-index: 10;
+    transition: 0.5s;
+
 
 }
 
-#menu li {
-    text-decoration: none;
-    padding: 1rem;
-}
+
 
 #menuknap {
-    z-index: 10;
+    position: absolute;
+    cursor: pointer;
+    transition: 2s;
+    z-index: 20;
 }
 
 a {
@@ -195,10 +245,12 @@ a:active {
 }
 
 #menu #logo {
-    position: absolute;
-    left: 40vw;
-    height: 8vw;
+    transform: scale(1.2);
+    top: 20vw;
+    left: 35vw;
+
 }
+
 
 
 main #landingpage {
@@ -223,162 +275,73 @@ main #landingpage {
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 125px 125px 125px;
+    grid-template-rows: 125px 125px 125px 125px 125px 125px;
     grid-gap: 10px;
-    text-align: center;
 }
 
+
 .item {
+    background-color: #fff;
     display: grid;
     justify-items: center;
     align-items: center;
 }
 
 
-
-.a {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-}
-
-
-.b {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
+.item-4 {
+    grid-column: 1 / span 2;
 
 }
 
-.c {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-
-}
-
-.d {
-    padding: 1rem 0;
-    font-size: 2rem;
-    grid-column-end: span 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-
-
-}
-
-
-.e {
-    grid-column-start: 3;
-    grid-row-start: 2;
-
-}
-
-
-.f {
-    grid-column-start: 1;
-    grid-row-start: 3;
-
-}
-
-.g {
-    grid-column-start: 2;
-    grid-row-start: 3;
-
-}
-
-.h {
-    grid-column-start: 3;
-    grid-row-start: 3;
-
-}
-
-.i {
-    grid-column-start: 1;
-    grid-row-start: 4;
-
-}
 
 .j {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 4;
-    grid-row-end: 6;
-    justify-content: center;
-    align-items: center;
+    grid-column: 2 / span 2;
+    grid-row: 4 / span 2;
     font-family: 'arial', sans-serif;
     font-weight: 600;
-    font-size: 4rem;
-
-}
-
-.k {
-    grid-column-start: 1;
-    grid-row-start: 5;
-
-}
-
-.l {
-    grid-column-start: 1;
-    grid-row-start: 6;
+    font-size: 3rem;
 
 }
 
 
-.m {
-    grid-column-start: 2;
-    grid-row-start: 6;
-
-}
-
-.n {
-    grid-column-start: 3;
-    grid-row-start: 6;
-
-}
-
-
-
-
-
-
-figure {
-    margin: 0;
-    padding: 2rem;
-    background-color: #FFFFFF;
+.grid a {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
     color: #F58E81;
     font-family: 'arial', sans-serif;
     font-weight: 600;
-    background-size: contain;
 
 }
 
 
-/********** AFLEVERINGER **********/
+/********** MATERIALER **********/
 
 
 
 
 .grey {
-    margin: 2rem 1.2rem;
-    padding: 1rem 0rem;
+    margin: 1rem 1.2rem;
+    padding: 0.5rem 0rem;
     background-color: #DEDCDB;
     /*    padding: 1rem;*/
 
 }
 
-.grey img {
+#pil {
     position: relative;
     left: 84vw;
-    bottom: 2vw;
+    bottom: 4vw;
 
 }
 
+
 .link {
     position: relative;
-    left: 75vw;
-    bottom: 8vw;
+    left: 70vw;
+    bottom: 2vw;
 
 }
 
