@@ -25,6 +25,7 @@ function toggleMenu() {
         document.getElementById("menuknap").src = "assets/No.svg";
 
         document.getElementById("test").classlist = "hidden";
+        document.getElementById("landingpage").classlist = "hidden";
     }
 }
 

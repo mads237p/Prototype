@@ -9,17 +9,11 @@
 body {
     margin: 0;
     background-color: #FAF7F7;
+    font-family: 'canada-type-gibson', sans-serif;
 }
 
 header #pageone {
     background-color: #F58E81;
-    text-align: left;
-    padding: 5vw 2vw;
-
-}
-
-header #top {
-    background-color: #EA5045;
     text-align: left;
     padding: 5vw 2vw;
 
@@ -108,7 +102,6 @@ ul {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-color: #FAF7F7;
     margin: 30vw 0;
@@ -116,13 +109,8 @@ ul {
 }
 
 
-form {
-    font-size: 1rem;
-    /*    list-style-type: none;*/
-
-}
-
-input {
+input[type=text],
+input[type=password] {
     font-family: 'arial', sans-serif;
     border: 1px solid #FFFFFF;
     color: #F58E81;
@@ -133,10 +121,21 @@ input {
     border-radius: 2rem;
 }
 
-.forms {
-    text-align: center;
+.passwordhelp {
+    display: block;
+    margin: 0;
+    margin-top: -6vw;
+    font-size: 0.7rem;
 
 }
+
+.glemtpassword {
+    display: block;
+    margin-top: 8vw;
+    text-align: right;
+    font-size: 0.7rem;
+}
+
 
 .button {
     margin-top: 10vw;
@@ -150,7 +149,7 @@ input {
     height: 9vw;
     width: 60vw;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 8px;
     margin-bottom: 6vw;
 }
 
@@ -162,17 +161,8 @@ input {
     height: 9vw;
     width: 60vw;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 8px;
 
-}
-
-#huskmig {
-    display: flex;
-}
-
-
-#checkbox {
-    height: 10px;
 }
 
 
@@ -180,28 +170,30 @@ input {
 /****** LANDING PAGE *******/
 
 header {
-    padding: 5vw;
+    margin: 0;
     background-color: #EA5045;
+}
+
+nav {
+    width: 100%;
 }
 
 nav #menuknap {
     position: absolute;
     right: 10vw;
-    top: 8vw;
+    top: 15px;
     height: 20px;
+}
+
+#headerlogo {
+    height: 50px;
+    padding: 1rem;
 }
 
 nav #profile {
     position: absolute;
     right: 20vw;
-    top: 8vw;
-    height: 20px;
-}
-
-nav . {
-    position: absolute;
-    right: 20vw;
-    top: 8vw;
+    top: 15px;
     height: 20px;
 }
 
@@ -213,21 +205,16 @@ nav . {
     top: 0;
     bottom: 0;
     margin: 0;
-    /*    height: 100%;*/
     width: 100%;
-    padding: 35vw;
-    font-family: 'canada-type-gibson', sans-serif;
+    padding: 35vw 35vw 0 35vw;
     background-color: #3F3140;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
     justify-content: center;
     z-index: 10;
     transition: 0.5s;
 
-
 }
-
-
 
 #menuknap {
     position: absolute;
@@ -244,14 +231,10 @@ a:active {
     color: #ffffff;
 }
 
-#menu #logo {
+#logo {
     transform: scale(1.2);
-    top: 20vw;
-    left: 35vw;
-
+    margin-bottom: 10vw;
 }
-
-
 
 main #landingpage {
     background-color: #FAF7F7;
@@ -275,11 +258,10 @@ main #landingpage {
 
 .grid {
     display: grid;
-    grid-template-columns: 125px 125px 125px;
-    grid-template-rows: 125px 125px 125px 125px 125px 125px;
-    grid-gap: 10px;
+    grid-template-columns: 120px 120px 120px;
+    grid-template-rows: 120px 120px 120px 120px 120px 120px;
+    grid-gap: 7.5px;
 }
-
 
 .item {
     background-color: #fff;
@@ -288,12 +270,10 @@ main #landingpage {
     align-items: center;
 }
 
-
 .item-4 {
     grid-column: 1 / span 2;
 
 }
-
 
 .j {
     grid-column: 2 / span 2;
@@ -330,13 +310,13 @@ main #landingpage {
 
 }
 
-#pil {
+#pil,
+.pil {
     position: relative;
     left: 84vw;
     bottom: 4vw;
 
 }
-
 
 .link {
     position: relative;
@@ -359,14 +339,4 @@ main #landingpage {
     padding: 2rem;
     list-style: none;
 
-}
-
-
-@media only screen and (min-width:604px) {
-
-    main #front {
-        max-width: 800px;
-        padding: 0 30vw;
-        margin: 0 20vw;
-    }
 }
