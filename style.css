@@ -34,7 +34,6 @@ h2 {
 
 }
 
-h3 {}
 
 h4 {
     font-family: 'canada-type-gibson', sans-serif;
@@ -104,37 +103,43 @@ ul {
     flex-direction: column;
     align-items: center;
     background-color: #FAF7F7;
-    margin: 30vw 0;
+    margin: 40vw 0 20vw 0;
 
 }
-
 
 input[type=text],
 input[type=password] {
     font-family: 'arial', sans-serif;
     border: 1px solid #FFFFFF;
     color: #F58E81;
-    padding: 0.5rem;
     margin: 3vw;
     height: 9vw;
     width: 60vw;
+    padding-left: 1rem;
     border-radius: 2rem;
 }
 
-.passwordhelp {
-    display: block;
-    margin: 0;
-    margin-top: -6vw;
-    font-size: 0.7rem;
+input[type=checkbox] {
+    display: inline-block;
+    position: relative;
 
 }
 
 .glemtpassword {
-    display: block;
-    margin-top: 8vw;
     text-align: right;
     font-size: 0.7rem;
 }
+
+.huskmig {
+    margin-top: -5vw;
+    font-size: 0.7rem;
+}
+
+.forms {
+    margin-bottom: 20vw;
+}
+
+
 
 
 .button {
@@ -219,7 +224,6 @@ nav #profile {
 #menuknap {
     position: absolute;
     cursor: pointer;
-    transition: 2s;
     z-index: 20;
 }
 
